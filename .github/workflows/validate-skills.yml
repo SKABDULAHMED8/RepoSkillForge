@@ -1,0 +1,26 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate skill metadata
+        shell: bash
+        run: |
+          set -e
+          count=0
+          while IFS= read -r -d '' file; do
+            count=$((count+1))
+            head -n 1 "$file" | grep -q '^---$'
+            grep -q '^name:' "$file"
+            grep -q '^description:' "$file"
+            echo "OK: $file"
+          done < <(find skills -name SKILL.md -print0)
+          test "$count" -gt 0
+      - name: Validate registry JSON
+        run: python -m json.tool registry/skills.json >/dev/null

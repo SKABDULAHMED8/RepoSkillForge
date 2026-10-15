@@ -1,0 +1,9 @@
+{
+  "name": "manimgl",
+  "displayName": "ManimGL",
+  "version": "1.0.0",
+  "description": "Expert guidance for 3Blue1Brown's ManimGL.",
+  "skills": [
+    "./skills/"
+  ]
+}

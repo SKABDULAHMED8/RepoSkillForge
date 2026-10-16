@@ -40,14 +40,12 @@ Copy the complete `skills/<skill-name>/` directory into the skills directory use
 
 ## Available skills
 
+<!-- BEGIN GENERATED SKILLS -->
 | Skill | Purpose | Upstream |
 |---|---|---|
-| **ManimGL** (`manimgl`) | Guidance for scenes, Mobjects, animations, LaTeX, graphs, updaters, 3D scenes, camera control, CLI rendering, debugging, and compatibility pitfalls. | [3b1b/manim](https://github.com/3b1b/manim) |
-
-Skill directory: [`skills/manimgl/`](skills/manimgl/)
-
-**Important:** ManimGL and Manim Community Edition are different projects. Instructions for one should not be assumed to work for the other.
-
+| **[ManimGL](skills/manimgl/)** (`manimgl`) | Expert guidance for 3Blue1Brown's ManimGL. | [manim](https://github.com/3b1b/manim) |
+| **[Windows Shell Fixer](skills/win-shell-fixer/)** (`win-shell-fixer`) | A safety-first diagnostic workflow for Windows CMD and PowerShell errors, using short command/output loops to diagnose and verify fixes. | [RepoSkillForge](https://github.com/SKABDULAHMED8/RepoSkillForge) |
+<!-- END GENERATED SKILLS -->
 ## What is a RepoSkill?
 
 A RepoSkill is **not a copy of the source repository**. It is an AI-facing operating guide derived from a repository.

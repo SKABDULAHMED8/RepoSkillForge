@@ -15,6 +15,20 @@
         "claude-code"
       ],
       "description": "Expert guidance for 3Blue1Brown's ManimGL."
+    },
+    {
+      "id": "win-shell-fixer",
+      "name": "Windows Shell Fixer",
+      "path": "skills/win-shell-fixer",
+      "source": "https://github.com/SKABDULAHMED8/RepoSkillForge",
+      "category": "system-administration",
+      "status": "beta",
+      "license": "MIT",
+      "targets": [
+        "agent-skills",
+        "claude-code"
+      ],
+      "description": "A safety-first diagnostic workflow for Windows CMD and PowerShell errors, using short command/output loops to diagnose and verify fixes."
     }
   ]
 }
